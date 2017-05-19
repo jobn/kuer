@@ -1,24 +1,23 @@
-# README
+# KUER README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development setup
 
-Things you may want to cover:
+Backend in Rails 5.1,
+client in React 15.5
 
-* Ruby version
+ruby-version 2.4,
+node-version 7.10
 
-* System dependencies
+The client app is bootstrapped using [create-react-app](https://github.com/facebookincubator/create-react-app)
 
-* Configuration
+Run the following commands to setup dev environment
 
-* Database creation
+* `bundle install`
+* `npm i -g create-react-app`
+* `cd client && npm install`
 
-* Database initialization
+## Starting the servers
 
-* How to run the test suite
+Development servers are managed by foreman and there is a rake task to start foreman. So booting the dev servers is as simple as:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rake start`
