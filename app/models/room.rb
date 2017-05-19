@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Room < ApplicationRecord
   after_initialize :build_number
 
@@ -7,7 +9,8 @@ class Room < ApplicationRecord
   private
 
   def build_number
-    return if self.number
+    return if number
+
     number = 0
     numbers = Room.pluck(:number)
 
